@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>iFace Detect</title>
+  <link rel="stylesheet" href="./styles/foundation.min.css ">
+  <link rel="stylesheet" href="./styles/modal.css ">
+  <link rel="stylesheet" href="./styles/gradient.css ">
+  <link rel="stylesheet" href="./styles/app.css ">
+  <link rel="prefetch" href='https://fonts.googleapis.com/css?family=Lato:400,900,400italic'>
+  <link rel="prefetch" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link href="https://fonts.googleapis.com/css?family=Arvo|Droid+Sans|Droid+Serif|Lato|Merriweather|Montserrat|Open+Sans|Oxygen|PT+Sans|Roboto|Roboto+Slab|Sanchez|Ubuntu|Vollkorn" rel="stylesheet">
+</head>
+
+<body>
+  <h1>iFace Detect
+    <small>Biometric Login |
+      <a href="#">Create Account</a>
+    </small>
+  </h1>
+  <div id="modal-container">
+    <div class="modal-background">
+      <div class="modal">
+        <h2 class="title">Biometric Authentication</h2>
+        <div class="media-container">
+          <video id="video" autoplay></video>
+        </div>
+        <div class="enroll-box">
+          <img class="avatar" src="./images/avatar.png" />
+          <div><div class="label">Name</div><input type="text" id="name" placeholder="Jon Snow" /></div>
+          <div><div class="label">Email</div><input type="text" id="email" placeholder="jon.snow@stark.com" /></div>
+        </div>
+        <p class="status"></p>
+        <button id="snap" class="primary button float-center">Login</button>
+        <button id="enroll" class="hollow button float-center">Enroll</button>
+        <canvas id="canvas" width="362" height="392"></canvas>
+        <svg class="modal-svg" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="none">
+          <rect x="0" y="0" fill="none" width="226" height="162" rx="3" ry="3"></rect>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <!-- LOOP LOADER -->
+
+  <div class="container bg-logo">
+    <img id="snapshot" class="text-center" />
+  </div>
+  <div class="content-gr">
+    <div class="circle"></div>
+    <div class="circle1"></div>
+  </div>
+
+  <div class="contentBar">
+    <div id="block_1" class="barlittle"></div>
+    <div id="block_2" class="barlittle"></div>
+    <div id="block_3" class="barlittle"></div>
+    <div id="block_4" class="barlittle"></div>
+    <div id="block_5" class="barlittle"></div>
+  </div>
+  <h1 class="welcome text-center"></h1>
+  <h1 class="setup-box">
+    <small class="text-center setup">Setting up biometrics...</small>
+  </h1>
+
+  <!-- END LOOP LOADER -->
+
+  <script type="text/javascript" src="lib/jquery.min.js"></script>
+  <script type="text/javascript" src="scripts/app.js"></script>
+  <script type="text/javascript" src="scripts/detect.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+fieldset {
+  border: none;
+  padding: 20px 0;  
+}
+
+h2 {
+  color: #1779ba;
+}
+.cards {
+  font-family: "Lucida Grande", Tahoma, Verdana, sans-serif;
+  padding: 40px;
+    overflow: hidden;
+}
+
+.card input {
+  position: absolute !important;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  width: 1px;
+  border: 0;
+  overflow: hidden;
+}
+
+.card-box {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.card {
+  display: inline-block;
+  width: 200px;
+  height: 115px;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  opacity: 1;
+  cursor: pointer;
+  border-radius: 6px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgb(199, 201, 203);
+  border-image: initial;
+  margin-bottom: 15px;
+}
+
+card:hover {
+  cursor: pointer;
+}
+
+card input:checked + label {
+  border: 5px solid #f00;
+}
+
+.card img{
+  height: 50%;
+  width: 50%;
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 100%;
+  margin-top: 25px;
+}
+
+label {
+  margin-top: 20px;
+}
